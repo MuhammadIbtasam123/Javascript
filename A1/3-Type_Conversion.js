@@ -30,12 +30,12 @@
 
 let score = "ibtasam";
 
-//console.log(typeof score);
-//console.log(typeof(score));
+console.log(typeof score);
+console.log(typeof score);
 
 let valueInNumber = Number(score);
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+console.log(typeof valueInNumber);
+console.log(valueInNumber);
 
 // "33" => 33
 // "33abc" => NaN
@@ -44,7 +44,7 @@ let valueInNumber = Number(score);
 let isLoggedIn = "ibtasam";
 
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-//  console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
 // "" => false
@@ -53,27 +53,27 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 let someNumber = 33;
 
 let stringNumber = String(someNumber);
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+console.log(stringNumber);
+console.log(typeof stringNumber);
 
 /************************* Operations ******************************> */
 
 let value = 3;
 let negValue = -value;
-// console.log(negValue);
+console.log(negValue);
 
-// console.log(3 + 3); // 6
-// console.log(3 - 3); // 0
-// console.log(3 * 3); // 9
-// console.log(3 / 3); // 1
-// console.log(3 % 3); // 0
-// console.log(3 ** 3); // 27
+console.log(3 + 3); // 6
+console.log(3 - 3); // 0
+console.log(3 * 3); // 9
+console.log(3 / 3); // 1
+console.log(3 % 3); // 0
+console.log(3 ** 3); // 27
 
 /* ******************* String cancatentation ******************* */
 
 let firstName = "Muhammad";
 let lastName = " Ibtasam";
-console.log(firstName + lastName); // Muhammad Ibtasam
+// console.log(firstName + lastName); // Muhammad Ibtasam
 
 // using template literals
 console.log(`${firstName} ${lastName}`); // Muhammad Ibtasam
@@ -85,3 +85,12 @@ console.log(1 + "2"); // 12
 console.log(2 + 3 + "7"); // 57
 console.log("7" + 2 + 3); // 723
 console.log(2 + "3" + 7); // 237
+
+let counter = 0;
+
+// pre-increment: increment the value first then print it.
+console.log(++counter); // 1
+
+// post-increment: print the value after incrementing it.
+console.log(counter++); // 1
+console.log(counter); // 2
