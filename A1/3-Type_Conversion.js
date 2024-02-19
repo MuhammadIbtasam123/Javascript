@@ -55,3 +55,33 @@ let someNumber = 33;
 let stringNumber = String(someNumber);
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
+
+/************************* Operations ******************************> */
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+// console.log(3 + 3); // 6
+// console.log(3 - 3); // 0
+// console.log(3 * 3); // 9
+// console.log(3 / 3); // 1
+// console.log(3 % 3); // 0
+// console.log(3 ** 3); // 27
+
+/* ******************* String cancatentation ******************* */
+
+let firstName = "Muhammad";
+let lastName = " Ibtasam";
+console.log(firstName + lastName); // Muhammad Ibtasam
+
+// using template literals
+console.log(`${firstName} ${lastName}`); // Muhammad Ibtasam
+
+/* ****************** JS Ambiguity **************************/
+
+console.log("1" + 2); // 12
+console.log(1 + "2"); // 12
+console.log(2 + 3 + "7"); // 57
+console.log("7" + 2 + 3); // 723
+console.log(2 + "3" + 7); // 237
