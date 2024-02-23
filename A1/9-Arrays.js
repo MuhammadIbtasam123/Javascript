@@ -48,3 +48,32 @@ console.log(newArray);
 // 10, sort() - sort the array
 newArray.sort(); // [1, 2, 3, 4, 5]
 console.log(newArray);
+
+// 11. concat() - merge two arrays - Return new array
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = arr1.concat(arr2); // [1, 2, 3, 4, 5, 6]
+console.log(arr3);
+
+// -- Modren ECMA way
+// 11/A. spread operator - merge two arrays - Return new array
+const arr4 = [...arr1, ...arr2]; // [1, 2, 3, 4, 5, 6]
+
+// 12. join() - join array elements to string - Array -> String - join(separator i.e (-, _, /))
+const arr5 = [1, 2, 3, 4, 5];
+const str = arr5.join(""); // "12345"
+
+// 13. flat() - flat the nested array - flat( depth = 1 by default )
+const arr6 = [1, 2, [3, 4, [5, 6]]];
+const flatArr = arr6.flat(Infinity); // [1, 2, 3, 4, 5, 6]
+
+// 14. isArray() - check if the given value is array
+Array.isArray(arr6); // true
+
+// 15. .from() - convert array-like or iterable object to array - String -> Array
+const str1 = "Hello";
+const arr7 = Array.from(str1); // ["H", "e", "l", "l", "o"]
+
+// 16. .of() - create array from the given arguments
+const arr8 = Array.of(1, 2, 3, 4, 5); // [1, 2, 3, 4, 5]
+console.log(arr8);
