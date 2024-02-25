@@ -1,3 +1,4 @@
+/* Functions summary */
 // simple Function - Named Function
 
 function say() {
