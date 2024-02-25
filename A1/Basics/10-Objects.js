@@ -148,3 +148,26 @@ const person2 = {
 console.log(Object.keys(person2)); // ["name", "age", "hobbies", "greet"]
 console.log(Object.values(person2)); // ["Ibtasam", 23, ["Reading", "Coding", "Traveling"], function]
 console.log(Object.entries(person2)); // [["name", "Ibtasam"], ["age", 23], ["hobbies", ["Reading", "Coding", "Traveling"]], ["greet", function]]
+
+// Shallow vs Deep Copy
+
+let character = {
+  name: "Ibtasam",
+  age: 23,
+};
+console.log(character.name); // Ibtasam
+
+// Shallow copy - Reference to the original object - changes in the copy will reflect in the original object
+let ch = character;
+ch.name = "Ali";
+console.log(character.name); // Ali
+
+// Deep copy - New object with new reference - changes in the copy will not reflect in the original object
+let character1 = {
+  name: "Ahmad",
+  age: 23,
+};
+let ch1 = { ...character1 };
+console.log(character1.name); // Ahmad
+ch1.name = "Ali";
+console.log(character1.name); // Ahmad
