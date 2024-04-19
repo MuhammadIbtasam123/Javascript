@@ -28,7 +28,19 @@ const Hero = () => {
 
   return (
     <>
-      <button onClick={handleChangeAllShoes}>Change All Shoes</button>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* {" "} */}
+        <button onClick={handleChangeAllShoes} style={{ marginBottom: "1rem" }}>
+          Change All Shoes
+        </button>
+      </div>
+
       <div
         className="hero"
         style={{
